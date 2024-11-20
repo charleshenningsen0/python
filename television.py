@@ -6,11 +6,11 @@ class Television:
     MAX_CHANNEL = 3
 
     def __init__(self):
-        self.__status = False
-        self.__muted = False
-        self.__volume = self.MIN_VOLUME
-        self.__channel = self.MIN_CHANNEL
-        self.__previousVolume = self.__volume
+        self.__status: bool = False
+        self.__muted: bool = False
+        self.__volume: int = self.MIN_VOLUME
+        self.__channel: int = self.MIN_CHANNEL
+        self.__previousVolume: int = self.__volume
 
     def power(self):
         '''
