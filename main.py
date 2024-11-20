@@ -13,10 +13,19 @@ def main():
     print(tv_1)             # Power = True, Channel = 2, Volume = 1
 
     tv_1.channel_up()
+    # print('channel up')
+    # print(tv_1)
     tv_1.channel_up()
+    # print('channel up')
+    # print(tv_1)
     tv_1.channel_up()
+    # print('channel up')
+    # print(tv_1)
     tv_1.volume_down()
+    # print('volume down')
+    # print(tv_1)
     tv_1.volume_down()
+    # print('volume down')
     print(tv_1)             # Power = True, Channel = 1, Volume = 0
 
     tv_1.power()
@@ -32,6 +41,7 @@ def main():
     tv_1.channel_down()
     print(tv_1)             # Power = True, Channel = 3, Volume = 2
 
+    print('Tely 2')
     # Television 2
     tv_2 = Television()
     tv_2.power()
@@ -39,6 +49,7 @@ def main():
     tv_2.volume_up()
     print(tv_2)             # Power = True, Channel = 1, Volume = 1
 
+    print("Tele 1")
     # Muting effect
     tv_1.mute()
     print(tv_1)             # Power = True, Channel = 3, Volume = 0
