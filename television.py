@@ -12,14 +12,14 @@ class Television:
         self.__channel: int = self.MIN_CHANNEL
         self.__previousVolume: int = self.__volume
 
-    def power(self):
+    def power(self) -> None:
         '''
         Changes truth value of __status
         :param self: television object
         '''
         self.__status = not self.__status
 
-    def mute(self):
+    def mute(self) -> None:
         '''
         Changes truth value of __muted and swaps __previousVolume with __volume
         :param self: television object
@@ -28,7 +28,7 @@ class Television:
             self.__muted = not self.__muted#switch
             self.__previousVolume, self.__volume = self.__volume, self.__previousVolume
 
-    def channel_up(self):
+    def channel_up(self) -> None:
         '''
         When on, channel number if max, then changes to zero, otherwise up by one
         :param self: television object
@@ -39,7 +39,7 @@ class Television:
             else:
                 self.__channel += 1
 
-    def channel_down(self):
+    def channel_down(self) -> None:
         '''
         When on, changes channel number if min, then changes to max, otherwise down by one
         :param self: television object
@@ -50,7 +50,7 @@ class Television:
             else:
                 self.__channel -= 1
 
-    def volume_up(self):
+    def volume_up(self) -> None:
         '''
         When on, if muted call mute(), then if max, no change, otherwise add volume by one
         :param self: television object
@@ -64,7 +64,7 @@ class Television:
             else:
                 self.__volume += 1
 
-    def volume_down(self):
+    def volume_down(self) -> None:
         '''
         When on, if muted call mute(), then if max, no change, otherwise add volume by one
         :param self: television object
