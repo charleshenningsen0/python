@@ -16,7 +16,6 @@ class Television:
         '''
         Changes truth value of __status
         :param self: television object
-        :return: void
         '''
         self.__status = not self.__status
 
@@ -24,7 +23,6 @@ class Television:
         '''
         Changes truth value of __muted and swaps __previousVolume with __volume
         :param self: television object
-        :return: void
         '''
         if self.__status == True:
             self.__muted = not self.__muted#switch
@@ -34,7 +32,6 @@ class Television:
         '''
         When on, channel number if max, then changes to zero, otherwise up by one
         :param self: television object
-        :return: void
         '''
         if self.__status == True:
             if self.__channel == self.MAX_CHANNEL:
@@ -46,7 +43,6 @@ class Television:
         '''
         When on, changes channel number if min, then changes to max, otherwise down by one
         :param self: television object
-        :return: void
         '''
         if self.__status == True:
             if self.__channel == self.MIN_CHANNEL:
@@ -58,7 +54,6 @@ class Television:
         '''
         When on, if muted call mute(), then if max, no change, otherwise add volume by one
         :param self: television object
-        :return: void
         '''
         if self.__status == True:#if on
             if self.__muted == True:
@@ -73,7 +68,6 @@ class Television:
         '''
         When on, if muted call mute(), then if max, no change, otherwise add volume by one
         :param self: television object
-        :return: void
         '''
         if self.__status == True:#if on
             if self.__muted == False:#if unmuted
@@ -96,6 +90,6 @@ class Television:
         '''
         Returns the state of the television object
         :param self: television object
-        :return: Television status, channel, and volume
+        :return: Television status, channel, and volume as str
         '''
         return f'Power = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}'
