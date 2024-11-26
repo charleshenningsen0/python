@@ -79,7 +79,7 @@ class Test:
         self.tele1.volume_up()
         assert self.tele1.__str__() == "Power = True, Channel = 0, Volume = 2"
 
-        for _ in (self.tele1.MAX_VOLUME):
+        for _ in range(self.tele1.MAX_VOLUME):
             self.tele1.volume_up()
         assert self.tele1.__str__() == f"Power = True, Channel = 0, Volume = {self.tele1.MAX_VOLUME}"
 
